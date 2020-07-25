@@ -1,0 +1,29 @@
+.Container {
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-flow: column;
+    text-align: center;
+    padding: 10px;
+    /* border: 1px solid white; */
+}
+
+.Icon {
+    width: 100px;
+    height: 100px;
+}
+
+.Description {
+    font-size: 16px;
+}
+
+.Temp {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+@media(max-width: 500px) {
+    .Container {
+        width: 100%;
+    }
+}

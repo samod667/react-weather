@@ -1,0 +1,17 @@
+.Container{
+    width: 90%;
+    margin: 20px 0;
+    height: 600px;
+    align-items: center;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-flow: column;   
+}
+
+
+@media(max-width: 600px) {
+    .Container {
+        flex-flow: column;
+        padding: 0
+    }
+}

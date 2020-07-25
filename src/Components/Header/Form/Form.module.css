@@ -1,0 +1,48 @@
+.Container {
+    margin: 30px;
+    width: 100%;
+}
+
+.Form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.Input {
+    width: 20%;
+    height: 25px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 18px;
+}
+
+.Input:focus {
+    outline: none;
+}
+
+.SubmitBtn {
+    height: 30px;
+    padding: 3px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    
+}
+
+.SubmitBtn:active {
+    transform: scale(0.98);
+    outline: none;
+}
+
+.SubmitBtn:focus {
+    outline: none;
+}
+
+@media(max-width: 500px) {
+    .Input {
+       width: 250px;
+    }
+}

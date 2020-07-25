@@ -1,0 +1,9 @@
+.Container { 
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    border: 1px solid red;
+   
+    padding: 10px;
+    justify-content: center;
+}
