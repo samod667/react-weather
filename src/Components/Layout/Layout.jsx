@@ -23,8 +23,8 @@ function Layout() {
   function handleUserRequest(e) {
     e.preventDefault();
     const API_KEY = "568850fc8ca011f081228dd677ed823f";
-    // const dailyURL = `https://api.openweathermap.org/data/2.5/weather?q=${userInput.userInput}&units=metric&appid=${API_KEY}`;
-    const dailyURL = `https://api.openweathermap.org/data/2.5/weather?q=london&units=metric&appid=${API_KEY}`;
+    const dailyURL = `https://api.openweathermap.org/data/2.5/weather?q=${userInput.userInput}&units=metric&appid=${API_KEY}`;
+    // const dailyURL = `https://api.openweathermap.org/data/2.5/weather?q=london&units=metric&appid=${API_KEY}`;
 
     setShowResult(false);
 

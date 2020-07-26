@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import Moment from 'react-moment'
+import Moment from "react-moment";
 
 import Day from "./Day/Day";
 import { DataContext } from "../../../DataContext";
@@ -13,16 +13,42 @@ function WeeklyResults() {
   console.log(daily);
 
   const day = daily.map((day, i) => {
+    const { min, max } = day.temp;
+    const { humidity, uvi } = day;
+    const { main, icon } = day.weather[0];
+
     if (i === 0 || i === 7) {
       return null;
     } else if (i === 1) {
-        return <Day day='Tomorrow'/>
+      return (
+        <Day
+          key={i}
+          day="Tomorrow"
+          min={min}
+          max={max}
+          humidity={humidity}
+          uvIndex={uvi}
+          icon={icon}
+          main={main}
+        />
+      );
     } else {
-      return <Day className={classes.Container} day='Day' uvIndex={day.uvi} />;
+      return (
+        <Day
+          key={i}
+          day="Day"
+          min={min}
+          max={max}
+          humidity={humidity}
+          uvIndex={uvi}
+          icon={icon}
+          main={main}
+        />
+      );
     }
   });
 
   return <div className={classes.Container}>{day}</div>;
 }
 
-export default WeeklyResults
+export default WeeklyResults;

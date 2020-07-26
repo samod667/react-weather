@@ -1,13 +1,13 @@
 .Container{
     min-width: 75%;
     width: auto;
-    margin: 20px 0;
+    margin-top: 20px;
     min-height: 450px;
     height: auto;
     /* align-items: center; */
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     display: flex;
-    flex-flow: row;   
+    flex-flow: row;  
 }
 
 
