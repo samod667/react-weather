@@ -1,29 +1,15 @@
 .Container {
-    width: 70%;
-    height: 50%;
+    width: 30%;
     display: flex;
     flex-flow: column;
     text-align: center;
-    padding: 10px;
-    /* border: 1px solid white; */
+    padding: 10px 20px 10px 20px;
+    border: 1px solid white;
+    align-items: flex-start;
 }
 
-.Icon {
-    width: 100px;
-    height: 100px;
-}
-
-.Description {
-    font-size: 16px;
-}
-
-.Temp {
-    font-size: 20px;
-    font-weight: 700;
-}
-
-@media(max-width: 500px) {
+@media(max-width: 600px) {
     .Container {
-        width: 100%;
+        width: auto;
     }
 }

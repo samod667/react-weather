@@ -13,7 +13,7 @@ function Results() {
       <div className={classes.Container}>
         {isLoading.isLoading === true ? <Loading /> : null}
         <DailyResults />
-        
+        <WeeklyResults />
       </div>
     );
 }

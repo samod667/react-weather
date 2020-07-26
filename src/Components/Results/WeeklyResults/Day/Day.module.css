@@ -1,0 +1,13 @@
+.Container {
+    width: 200px;
+    height: 200px;
+    border: 1px solid green;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 5px;
+}
+
+.Header {
+    font-weight: 700;
+}

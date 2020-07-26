@@ -1,0 +1,17 @@
+.TableData {
+    margin-top: 20px;
+    text-align: start;
+}
+
+
+.Table {
+  font-size: 14px;
+  border-collapse: collapse;
+  border: 1px solid white;
+  padding: 3px;
+}
+
+.Tr  {
+    border: 1px solid white;
+    padding: 5px;
+}

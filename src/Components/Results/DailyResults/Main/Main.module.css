@@ -1,0 +1,28 @@
+
+.Main {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.Header {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 25px;
+    /* align-self: center; */
+}
+
+.Description {
+    font-weight: 700;
+    font-size: 26px;
+}
+
+.Icon {
+    width: 100px;
+    height: 100px;
+}
+
+.Temp {
+    font-weight: 700;
+    font-size: 24px;
+}

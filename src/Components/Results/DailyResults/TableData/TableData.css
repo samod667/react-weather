@@ -1,0 +1,10 @@
+.TableData {
+    margin-top: 30px;
+    text-align: start;
+}
+
+tr:nth-child(odd) {
+    background-color: rgba(128, 128, 128, 0.644);
+}
+
+

@@ -1,17 +1,22 @@
 .Container{
-    width: 90%;
+    min-width: 75%;
+    width: auto;
     margin: 20px 0;
-    height: 600px;
-    align-items: center;
-    /* border: 1px solid blue; */
+    min-height: 450px;
+    height: auto;
+    /* align-items: center; */
+    border: 1px solid blue;
     display: flex;
-    flex-flow: column;   
+    flex-flow: row;   
 }
 
 
-@media(max-width: 600px) {
+@media(max-width: 800px) {
     .Container {
         flex-flow: column;
-        padding: 0
+        padding: 0;
+        width: 300px;
+        height: auto;
+        align-items: center;
     }
 }
