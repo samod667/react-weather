@@ -5,6 +5,7 @@ import axios from "axios";
 import Header from "../Header/Header";
 import Results from "../Results/Results";
 import ErrorMsg from "../Results/ErrorMsg/Error";
+import Loading from '../Results/Loading/Loading'
 
 import classes from "./Layout.module.css";
 
@@ -28,7 +29,7 @@ function Layout() {
 
     setShowResult(false);
 
-    setIsLoading(() => ({ isLoading: true }));
+    setIsLoading(true);
     let lat;
     let lon;
     //FETCH DAILY RESULTS
@@ -56,7 +57,7 @@ function Layout() {
             });
           })
           .then(() => {
-            setIsLoading(() => ({ isLoading: false }));
+            setIsLoading(false);
             setShowResult(true);
           });
       })
@@ -65,7 +66,7 @@ function Layout() {
       .catch((e) => {
         //HANDLE ERROR
 
-        setIsLoading(() => ({ isLoading: false }));
+        setIsLoading(false);
         handleError();
       });
   }
@@ -82,8 +83,9 @@ function Layout() {
     <div className={classes.Layout}>
       <Context.Provider value={{ userInput, setUserInput, isLoading }}>
         <Header submit={handleUserRequest} />
+        {isLoading ? <Loading /> : null}
         <DataContext.Provider
-          value={{ dailyWeather, weeklyWeather, isLoading }}
+          value={{ dailyWeather, weeklyWeather }}
         >
           {showResult ? <Results /> : null}
         </DataContext.Provider>

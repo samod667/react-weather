@@ -1,7 +1,14 @@
-import React from 'react'
+import React from "react";
+import classes from "./Loading.module.css";
 
 function Loading() {
-    return (<div><h4>Loading...</h4></div>)
+  return (
+    <div className={classes.Container}>
+      <div className={classes.Circle}></div>
+      <div className={classes.Circle}></div>
+      <div className={classes.Circle}></div>
+    </div>
+  );
 }
 
-export default Loading
+export default Loading;
