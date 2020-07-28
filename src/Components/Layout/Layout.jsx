@@ -6,6 +6,7 @@ import Header from "../Header/Header";
 import Results from "../Results/Results";
 import ErrorMsg from "../Results/ErrorMsg/Error";
 import Loading from '../Results/Loading/Loading'
+import Footer from '../Footer/Footer'
 
 import classes from "./Layout.module.css";
 
@@ -83,14 +84,14 @@ function Layout() {
     <div className={classes.Layout}>
       <Context.Provider value={{ userInput, setUserInput, isLoading }}>
         <Header submit={handleUserRequest} />
-        {isLoading ? <Loading /> : null}
-        <DataContext.Provider
-          value={{ dailyWeather, weeklyWeather }}
-        >
+
+        <DataContext.Provider value={{ dailyWeather, weeklyWeather }}>
           {showResult ? <Results /> : null}
         </DataContext.Provider>
         {error ? <ErrorMsg /> : null}
+        {isLoading ? <Loading /> : null}
       </Context.Provider>
+      <Footer />
     </div>
   );
 }

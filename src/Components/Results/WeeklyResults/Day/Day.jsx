@@ -1,11 +1,18 @@
 import React from 'react'
+import Moment from 'react-moment'
 
 import classes from './Day.module.css'
 
 function Day({day, uvIndex, min, max, humidity, icon, main}) {
+ 
+
+  
+
     return (
       <div className={classes.Container}>
-        <span className={classes.Header}>{day}</span>
+        <span className={classes.Header}>
+          {day}
+        </span>
         <span className={classes.Main}>{main}</span>
         <img
           className={classes.Icon}
@@ -14,8 +21,10 @@ function Day({day, uvIndex, min, max, humidity, icon, main}) {
         />
         <span className={classes.Temp}>
           {Math.round(min)}℃ - {Math.round(max)}℃
-        </span><br/>
-        <span>UV: {Math.round(uvIndex)}</span><br />
+        </span>
+        <br />
+        <span>UV: {Math.round(uvIndex)}</span>
+        <br />
         <span>Humidity: {humidity}%</span>
       </div>
     );

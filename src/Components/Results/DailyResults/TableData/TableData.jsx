@@ -10,15 +10,15 @@ function TableData({ feelsLike, humidity, tempMin, tempMax }) {
         <tbody>
           <tr className="tr">
             <td>Feels Like:</td>
-            <td>{Math.round(feelsLike)} ℃</td>
+            <td>{Math.round(feelsLike)} °c</td>
           </tr>
           <tr>
             <td>Max Temp:</td>
-            <td>{Math.round(tempMax)} ℃</td>
+            <td>{Math.round(tempMax)} °c</td>
           </tr>
           <tr>
             <td>Min Temp:</td>
-            <td>{Math.round(tempMin)} ℃</td>
+            <td>{Math.round(tempMin)} °c</td>
           </tr>
           <tr>
             <td>Humidity:</td>

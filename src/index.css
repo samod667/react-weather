@@ -1,12 +1,11 @@
 body {
   margin: 0;
-  background-color: black;
+  background-color: #161616;
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, "Open Sans", 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {

@@ -3,10 +3,11 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    margin: 0;
 }
 
 .Header {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 400;
     margin-bottom: 25px;
     /* align-self: center; */
@@ -15,6 +16,7 @@
 .Description {
     font-weight: 700;
     font-size: 26px;
+    margin: 0
 }
 
 .Icon {
@@ -24,5 +26,5 @@
 
 .Temp {
     font-weight: 700;
-    font-size: 24px;
+    font-size: 26px;
 }

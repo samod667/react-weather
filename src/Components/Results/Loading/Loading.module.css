@@ -1,5 +1,6 @@
 .Container {
     display: flex;
+    margin-top: 100px;
 }
 
 .Circle {

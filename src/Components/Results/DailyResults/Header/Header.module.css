@@ -1,6 +1,14 @@
 .Header {
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 25px;
     /* align-self: center; */
+}
+
+.Text {
+    display: block;
+    font-size: 20px;
+    margin-top: 10px;
+    font-weight: 400;
+    text-align: left;
 }
