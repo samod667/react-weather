@@ -5,8 +5,8 @@ import axios from "axios";
 import Header from "../Header/Header";
 import Results from "../Results/Results";
 import ErrorMsg from "../Results/ErrorMsg/Error";
-import Loading from '../Results/Loading/Loading'
-import Footer from '../Footer/Footer'
+import Loading from "../Results/Loading/Loading";
+import Footer from "../Footer/Footer";
 
 import classes from "./Layout.module.css";
 
@@ -26,7 +26,6 @@ function Layout() {
     e.preventDefault();
     const API_KEY = "568850fc8ca011f081228dd677ed823f";
     const dailyURL = `https://api.openweathermap.org/data/2.5/weather?q=${userInput.userInput}&units=metric&appid=${API_KEY}`;
-    // const dailyURL = `https://api.openweathermap.org/data/2.5/weather?q=london&units=metric&appid=${API_KEY}`;
 
     setShowResult(false);
 
@@ -37,7 +36,7 @@ function Layout() {
     axios
       .get(`${dailyURL}`)
       .then((res) => {
-        // console.log(res.data);
+       
 
         setError(false);
 
@@ -52,7 +51,7 @@ function Layout() {
             `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${lon}&exclude=minutely,hourly&units=metric&appid=${API_KEY}`
           )
           .then((res) => {
-            // console.log(res.data);
+            
             setWeeklyWeather((prevState) => {
               return { ...prevState, weeklyWeather: res.data };
             });

@@ -10,13 +10,11 @@ function Form({ submit }) {
     });
   }
 
-  const { userInput, setUserInput } = useContext(Context);
-
+  const { setUserInput } = useContext(Context);
 
   return (
     <div className={classes.Container}>
       <form className={classes.Form} onSubmit={submit}>
-
         <input
           className={classes.Input}
           onChange={(e) => handleUserInput(e.target.value)}

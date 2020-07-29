@@ -10,17 +10,13 @@ function WeeklyResults() {
   const data = useContext(DataContext);
   const { weeklyWeather } = data.weeklyWeather;
   const { daily } = weeklyWeather;
-  console.log(daily);
-
-  
-  
 
   const day = daily.map((day, i) => {
     const { min, max } = day.temp;
     const { humidity, uvi } = day;
     const { main, icon } = day.weather[0];
 
-   const date = moment().add(i, "d").format("dddd");
+    const date = moment().add(i, "d").format("dddd");
 
     if (i === 0 || i === 7) {
       return null;

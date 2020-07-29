@@ -18,24 +18,22 @@ function DailyResults() {
   const { main, icon } = dailyWeather.weather[0];
 
   return (
-    
-      <div className={classes.Container}>
-        <Header location={name} country={country} />
-        <Main
-          description={main}
-          icon={icon}
-          temp={temp}
-          name={name}
-          country={country}
-        />
-        <TableData
-          feelsLike={feels_like}
-          tempMax={temp_max}
-          tempMin={temp_min}
-          humidity={humidity}
-        />
-      </div>
-   
+    <div className={classes.Container}>
+      <Header location={name} country={country} />
+      <Main
+        description={main}
+        icon={icon}
+        temp={temp}
+        name={name}
+        country={country}
+      />
+      <TableData
+        feelsLike={feels_like}
+        tempMax={temp_max}
+        tempMin={temp_min}
+        humidity={humidity}
+      />
+    </div>
   );
 }
 

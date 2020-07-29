@@ -4,16 +4,21 @@
   /* border: 1px solid red; */
   width: 100%;
   align-items: center;
+  row-gap: 5;
   justify-content: center;
 }
 
-/* IMPLEMENT CSS GRID HERE 3 ON EACH ROW! */
-
 @media (max-width: 800px) {
   .Container {
-      display:flex;
-      flex-wrap: wrap;
-      flex-flow: column;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
     width: auto;
+  }
+}
+
+@media (min-width: 1550px) {
+  .Container {
+    grid-template-columns: repeat(3, 300px);
   }
 }

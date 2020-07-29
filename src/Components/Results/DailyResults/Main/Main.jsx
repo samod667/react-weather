@@ -11,7 +11,7 @@ function Main({ description , icon, temp}) {
         src={`http://openweathermap.org/img/wn/${icon}.png`}
         alt="icon"
       />
-      <span className={classes.Temp}>{Math.round(temp)} ℃</span>
+      <span className={classes.Temp}>{Math.round(temp)} °c</span>
     </div>
   );
 }

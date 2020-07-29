@@ -1,8 +1,6 @@
 .Layout {
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    padding: 20px;
-    
-
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  padding: 20px;
 }
